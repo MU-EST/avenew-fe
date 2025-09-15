@@ -1,0 +1,226 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@layer base {
+  body {
+    font-family: "AvenirNextLTPro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-BOLD.OTF") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-BOLDCN.OTF") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-BOLDCNIT.OTF") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-CN.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-CNIT.OTF") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-DEMI.OTF") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-DEMICN.OTF") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-DEMICNIT.OTF") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-DEMIIT.OTF") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-HEAVYCN.OTF") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-HEAVYCNIT.OTF") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-IT.OTF") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-MEDIUMCN.OTF") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-MEDIUMCNIT.OTF")
+      format("opentype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-REGULAR.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-ULTLTCN.OTF") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../assets/fonts/AVENIRNEXTLTPRO-ULTLTCNIT.OTF") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+}
+
+@theme {
+  --color-metallic-grey: #f2f2f2;
+  --color-smart-green: #baf400;
+  --font-avenir: "AvenirNextLTPro", sans-serif;
+}
+
+/* Banner Section Styles */
+@media (min-width: 768px) and (max-height: 780px) {
+  .banner-video-ratio-sm-md {
+    height: 25rem !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) and (min-height: 300px) and (max-height: 750px) {
+  .banner-video-ratio-lg {
+    height: 25rem !important;
+    width: 20rem !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .banner-heading-font-size-sm {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (max-height: 630px) {
+  .special-banner-height {
+    height: 180vh !important;
+  }
+}
+
+/* End of Banner Section Styles */
+
+/* Nav Menu Styles */
+@media (max-width: 370px) {
+  .xs-link-style {
+    gap: 2px !important;
+    align-items: center !important;
+  }
+  .xs-link-style * {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 480px) {
+  .xs-link-style {
+    gap: 20px;
+    align-items: center !important;
+    justify-content: start !important;
+  }
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-tablet-menu-container-scroll {
+  height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+/* End of Nav Menu Styles */
+
+/* Footer Styles */
+@media (max-width: 374px) {
+  .xs-link-style-footer {
+    gap: 2px !important;
+    align-items: center !important;
+  }
+
+  .xs-link-style-footer * {
+    font-size: 12px !important;
+  }
+
+  .xs-privacy-style-footer {
+    gap: 2px !important;
+    align-items: center !important;
+  }
+
+  .xs-privacy-style-footer * {
+    font-size: 12px !important;
+  }
+
+  .privacy-footer-position {
+    flex-direction: column;
+  }
+}
+/* End of Footer Styles */
